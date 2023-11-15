@@ -31,6 +31,8 @@ declare namespace API {
     msg?: string;
   };
   type RegisterResult = {
+    id?:number;
+    data: null;
     status?: string;
     type?: string;
     currentAuthority?: string;
@@ -73,6 +75,14 @@ declare namespace API {
     userAccount?: string;
     userPassword?: string;
     autoLogin?: boolean;
+    type?: string;
+    msg?: string;
+  };
+  type RegisterParams = {
+    code?: number;
+    userAccount?: string;
+    userPassword?: string;
+    checkPassword?: string;
     type?: string;
     msg?: string;
   };

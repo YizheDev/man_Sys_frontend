@@ -117,14 +117,14 @@ const Login: React.FC = () => {
           initialValues={{
             autoLogin: true,
           }}
-          actions={[
-            '其他登录方式 :',
-            <div key="icons">
-              <LockOutlined />
-              <MobileOutlined />
-              <UserOutlined />
-            </div>,
-          ]}
+          // actions={[
+          //   '其他登录方式 :',
+          //   <div key="icons">
+          //     <LockOutlined />
+          //     <MobileOutlined />
+          //     <UserOutlined />
+          //   </div>,
+          // ]}
           onFinish={async (values) => {
             await handleSubmit(values as API.LoginParams);
           }}
